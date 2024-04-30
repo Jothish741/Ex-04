@@ -93,6 +93,7 @@ return buf.toString(); }
 ````
 ## OUTPUT:
 ![Screenshot (25)](https://github.com/Jothish741/Ex-04/assets/127813293/a641adfd-7f60-49c9-a2f6-76381ffd8a53)
+![Screenshot (25)](https://github.com/Jothish741/Ex-04/assets/127813293/d0742f39-514d-4c92-b598-7856df4da6a7)
 
 
 
