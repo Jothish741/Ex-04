@@ -92,7 +92,8 @@ return buf.toString(); }
 }
 ````
 ## OUTPUT:
-![Screenshot (24)](https://github.com/Jothish741/Ex-04/assets/127813293/2f65b6c7-7655-4112-9701-5693535901ea)
+![Screenshot (25)](https://github.com/Jothish741/Ex-04/assets/127813293/a641adfd-7f60-49c9-a2f6-76381ffd8a53)
+
 
 
 ## RESULT:
@@ -164,10 +165,8 @@ BigInteger p = getNextPrime("10600"); /* approximate
 prime */
 BigInteger q = findQ(p.subtract(one));
 BigInteger g = getGen(p,q,randObj);
-System.out.println(" \n simulation of Digital Signature
-Algorithm \n");
-System.out.println(" \n global public key components
-are:\n");
+System.out.println(" \n simulation of Digital SignatureAlgorithm \n");
+System.out.println(" \n global public key componentsare:\n");
 System.out.println("\np is: " + p);
 System.out.println("\nq is: " + q);
 System.out.println("\ng is: " + g);
@@ -195,27 +194,25 @@ BigInteger u1 = (hashVal.multiply(w)).mod(q);
 BigInteger u2 = (r.multiply(w)).mod(q);
 BigInteger v = (g.modPow(u1,p)).multiply(y.modPow(u2,p));
 v = (v.mod(p)).mod(q);
-System.out.println("\nverifying digital signature
-(checkpoints)\n:");
+System.out.println("\nverifying digital signature(checkpoints)\n:");
 System.out.println("w is : " + w);
 System.out.println("u1 is : " + u1);
 System.out.println("u2 is : " + u2);
 System.out.println("v is : " + v);
 if (v.equals(r))
 {
-System.out.println("\nsuccess: digital signature is
-verified!\n " + r);
+System.out.println("\nsuccess: digital signature isverified!\n " + r);
 }
 else
 {
-System.out.println("\n error: incorrect digital
-signature\n ");
+System.out.println("\n error: incorrect digitalsignature\n ");
 }
 }
 }
 ```
 ## OUTPUT:
-![image](https://github.com/IsaacAIML2023/Ex-04/assets/158465339/337034c5-ea1c-4332-a753-7c5b679325f2)
+![Screenshot (26)](https://github.com/Jothish741/Ex-04/assets/127813293/094dd8eb-d486-474a-838d-c03f88572973)
+
 
 ## RESULT:
 Thus program to implement the signature scheme named digital signature standard (Euclidean Algorithm) is implementeds successfully.
