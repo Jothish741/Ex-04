@@ -52,45 +52,50 @@ Output:
 H0, H1, H2, H3, H4, H5: Word buffers with final message digest
 ```
 ## PROGRAM
-```
+
 import java.security.*;
-public class SHA1 {
-public static void main(String[] a) {
-try {
-MessageDigest md = MessageDigest.getInstance("SHA1");
-System.out.println("Message digest object info: ");
-System.out.println(" Algorithm = " +md.getAlgorithm());
-System.out.println(" Provider = " +md.getProvider());
-System.out.println(" ToString = " +md.toString());
-String input = "";
-md.update(input.getBytes());
-byte[] output = md.digest();
-System.out.println();
-System.out.println("SHA1(\""+input+"\") = " +bytesToHex(output));
-input = "abc";
-md.update(input.getBytes());
-output = md.digest();
-System.out.println();
-System.out.println("SHA1(\""+input+"\") = " +bytesToHex(output));
-input = "abcdefghijklmnopqrstuvwxyz";
-md.update(input.getBytes());
-output = md.digest();
-System.out.println();
-System.out.println("SHA1(\"" +input+"\") = " +bytesToHex(output));
-System.out.println(""); }
-catch (Exception e) {
-System.out.println("Exception: " +e);
+
+public class JOTHISH {
+    public static void main(String[] args) {
+        try {
+            MessageDigest md = MessageDigest.getInstance("SHA-1");
+            System.out.println("Message digest object info:");
+            System.out.println(" Algorithm = " + md.getAlgorithm());
+            System.out.println(" Provider = " + md.getProvider());
+            System.out.println(" ToString = " + md.toString());
+            
+            String input = "";
+            md.update(input.getBytes());
+            byte[] output = md.digest();
+            System.out.println();
+            System.out.println("JOTHISH(\"" + input + "\") = " + bytesToHex(output));
+            
+            input = "abc";
+            md.update(input.getBytes());
+            output = md.digest();
+            System.out.println();
+            System.out.println("JOTHISH(\"" + input + "\") = " + bytesToHex(output));
+            
+            input = "abcdefghijklmnopqrstuvwxyz";
+            md.update(input.getBytes());
+            output = md.digest();
+            System.out.println();
+            System.out.println("JOTHISH(\"" + input + "\") = " + bytesToHex(output));
+            System.out.println();
+        } catch (Exception e) {
+            System.out.println("Exception: " + e);
+        }
+    }
+
+    public static String bytesToHex(byte[] bytes) {
+        char[] hexChars = "0123456789ABCDEF".toCharArray();
+        StringBuilder hexString = new StringBuilder(2 * bytes.length);
+        for (byte b : bytes) {
+            hexString.append(hexChars[(b & 0xF0) >> 4]).append(hexChars[b & 0x0F]);
+        }
+        return hexString.toString();
+    }
 }
-}
-public static String bytesToHex(byte[] b) {
-char hexDigit[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-StringBuffer buf = new StringBuffer();
-for (int j=0; j<b.length; j++) {
-buf.append(hexDigit[(b[j] >> 4) & 0x0f]);
-buf.append(hexDigit[b[j] & 0x0f]); }
-return buf.toString(); }
-}
-```
 ## OUTPUT:
 ![Screenshot (24)](https://github.com/Jothish741/Ex-04/assets/127813293/2f65b6c7-7655-4112-9701-5693535901ea)
 
