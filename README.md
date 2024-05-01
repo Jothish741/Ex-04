@@ -122,7 +122,7 @@ STEP-6: Comparing this ‘y’ with actual y’s document, Alice concludes that 
 forgery.
 ```
 ## PROGRAM: (Digital Signature Standard)
-```
+```java
 import java.util.*;
 import java.math.BigInteger;
 class dsaAlg {
