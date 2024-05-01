@@ -52,7 +52,7 @@ Output:
 H0, H1, H2, H3, H4, H5: Word buffers with final message digest
 ```
 ## PROGRAM
-`````
+```
 import java.security.*;
 public class SHA1 {
 public static void main(String[] a) {
@@ -90,9 +90,9 @@ buf.append(hexDigit[(b[j] >> 4) & 0x0f]);
 buf.append(hexDigit[b[j] & 0x0f]); }
 return buf.toString(); }
 }
-````
+```
 ## OUTPUT:
-![Screenshot (25)](https://github.com/Jothish741/Ex-04/assets/127813293/a641adfd-7f60-49c9-a2f6-76381ffd8a53)
+
 ![Screenshot (25)](https://github.com/Jothish741/Ex-04/assets/127813293/d0742f39-514d-4c92-b598-7856df4da6a7)
 
 
