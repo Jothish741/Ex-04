@@ -52,7 +52,7 @@ Output:
 H0, H1, H2, H3, H4, H5: Word buffers with final message digest
 ```
 ## PROGRAM
-```
+```java
 import java.security.*;
 public class SHA1 {
 public static void main(String[] a) {
