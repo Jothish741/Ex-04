@@ -1,5 +1,6 @@
+## EX.NO:
+## DATE:
 ## SECURE HASH FUNCTION (SHA)
-## DATE :
 ## AIM:
 Develop a program to implement Secure Hash Algorithm (SHA-1)
 ## SECURED HASH ALGORITHM-1 (SHA-1):
@@ -103,7 +104,8 @@ Thus SHA was implemented successfully.
 
 
 
-
+## EX.NO:
+## DATE:
 
   ## DIGITAL SIGNATURE STANDARD
 
